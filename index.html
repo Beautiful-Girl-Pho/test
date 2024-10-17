@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        /* CSS 样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #containerHeager{
+            width: 100%;
+            height: 100vh;
+            background-image: url('./biaoge.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #showcase {
+            min-height: 400px;
+            
+            text-align: center;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase div {
+             
+            width: auto;
+            height: 1020px; 
+        }
+        #newsletter {
+            padding: 15px;
+            color: #ffffff;
+            background: #35424a;
+        }
+        #newsletter h1 {
+            float: left;
+        }
+        #newsletter form {
+            float: right;
+            margin-top: 15px;
+        }
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+        .button_1 {
+            height: 38px;
+            background: #e8491d;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+        }
+        #boxes {
+            margin-top: 20px;
+        }
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+        #boxes .box img {
+            width: 90px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+
+        .containerBiaoGe {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://i1.hdslb.com/bfs/archive/cbd5d849a9df59c471b7e92ee1189e8da03ceafc.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .contentBiaoGe {
+            
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">我的</span> 个人博客</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="articles.html">文章</a></li>
+                    <li><a href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="containerBiaoGe">
+            <div class="contentBiaoGe">
+                <h1>头一回讲这个哈，咋的不得给彪哥个面子</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>订阅我的博客更新</h1>
+            <form>
+                <input type="email" placeholder="输入您的邮箱地址...">
+                <button type="submit" class="button_1">订阅</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://img0.baidu.com/it/u=3091241672,1749118077&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=450" alt="Web 开发图标">
+                <h3>Web 开发</h3>
+                <p>探索最新的 Web 开发技术和趋势，从前端到后端，应有尽有。</p>
+            </div>
+            <div class="box">
+                <img src="https://img2.baidu.com/it/u=1300234619,1337873674&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500" alt="移动应用开发图标">
+                <h3>移动应用开发</h3>
+                <p>了解如何构建跨平台的移动应用，以及最佳实践和技巧。</p>
+            </div>
+            <div class="box">
+                <img src="https://p8.itc.cn/images01/20231108/1433ac91d0da45f4bc497df03da5bad0.jpeg" alt="人工智能图标">
+                <h3>人工智能</h3>
+                <p>深入研究 AI 和机器学习的世界，探索它们如何改变我们的生活。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>我的个人博客 &copy; 2024</p>
+    </footer>
+
+    <script>
+        // JavaScript 代码将在这里
+    </script>
+</body>
+</html>
